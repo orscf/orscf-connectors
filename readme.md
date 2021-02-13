@@ -6,7 +6,20 @@
 
 
 
-comming soon...
+Here you'll some OpenSource connectors which are in sync with the latest versions of our OpenAPI definitions.
+
+
+
+Currently we have Libs for the following REST apis and technologies:
+
+
+
+* StudyDefinitionRepository
+  * .NET 5.0 (C#) -> also available as [Nuget](https://www.nuget.org)-Package
+
+
+
+
 
 ----
 

@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>ORSCF.StudyWorkflowDefinitionRepository.Connector</AssemblyName>
+    <RootNamespace>MedicalResearch.Workflow</RootNamespace>
+    <ApplicationIcon></ApplicationIcon>
+    <StartupObject></StartupObject>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/orscf/orscf-connectors</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/orscf/orscf-connectors</RepositoryUrl>
+    <Copyright>ORSCF.org</Copyright>
+    <Company>ORSCF.org</Company>
+    <Authors>ORSCF.org</Authors>
+    <PackageTags>Research Study Clinical Trial ORSCF</PackageTags>
+    <Version>0.2.0</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\..\..\(Stage)\Bin</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <DocumentationFile>..\..\..\(Stage)\Bin\ORSCF.StudyWorkflowDefinitionRepository.Connector.xml</DocumentationFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\..\..\(Stage)\Bin</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <DocumentationFile>..\..\..\(Stage)\Bin\ORSCF.StudyWorkflowDefinitionRepository.Connector.xml</DocumentationFile>
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
+  </ItemGroup>
+
+</Project>
